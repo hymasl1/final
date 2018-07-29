@@ -1,0 +1,27 @@
+/* Large */
+@media screen and (min-width: 64em) {
+    
+    
+    
+    /*This is the regular page content. */
+    body {
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+    
+    
+    
+    /*This is where all of the id selectors for index.html are held */
+    #reg-nav li{
+        font-size: 20px;
+    }
+    
+    
+    
+     /*This is where all of the class selectors for index.html are held */
+    
+    
+    
+    
+}

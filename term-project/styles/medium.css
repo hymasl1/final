@@ -1,0 +1,82 @@
+/* Medium */
+
+@media screen and (min-width: 40em) {
+
+    /*This is the regular page content. */
+    body {
+        width: 100%;
+        margin: 10px;
+    }
+
+    /*This is where all of the id selectors for index.html are held */
+    #content {
+        max-width: 95%;
+        margin: 20px;
+    }
+
+    #more-options {
+        display: none;
+    }
+
+    #logo {
+        height: 60px;
+    }
+    #reg-nav {
+        position: static;
+        display: contents;
+        width: 100%;
+    }
+
+    #reg-nav li {
+        display: inline-flex;
+        flex-flow: column;
+        padding-top: 15px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #reg-nav .active {
+        border-bottom: none;
+    }
+
+    #reg-nav ul.hide {
+        display: none;
+    }
+
+
+    /*This is where all of the class selectors for index.html are held */
+    .article-first {
+        border-top: solid;
+        margin-top: -5px;
+        margin: 20px;
+    }
+
+    .container {
+        border: none;
+    }
+
+    /*Adventure Tours Class Selectors*/
+    .tour1-info {
+        margin: 20px 5px 20px 15px;
+    }
+
+    .tour2-info {
+        margin: 20px 5px 20px 15px;
+    }
+    .article-content-adventure {
+        font-size: 25px;
+        align-items: center;
+        flex-flow: row;
+        margin: 20px 20px 0px 20px;
+
+    }
+
+    .article-content img {
+        margin: 10px;
+    }
+
+    /*Event class selectors*/
+    .article-content-events img {
+        width: 96%;
+    }
+}

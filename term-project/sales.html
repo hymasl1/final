@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mountain Spoke - Sales</title>
+    <!-- Motto - "Are you going to listen? -->
+    <meta name="Description" content="Enjoy our most popular bikes. You will be drooling over each image.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi|Cormorant+Unicase|Dancing+Script|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light" rel="stylesheet">
+    <!--  JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            var bikes = $('.accordion > div > p').hide();
+
+            bikes.show();
+
+            $('.accordion > div > a').click(function() {
+                var $this = $(this);
+                bikes.slideUp();
+                $this.parent().next().slideDown();
+
+                return false;
+            });
+
+        });
+    </script>
+</head>
+
+<!--Include one sales page displaying a minimum of three bicycle models of different makes and provide some basic specifications.-->
+<!--Implement an accordion menu or a horizontal slide experience to display the bicycle sales images and specifications one at a time on the sales page using jQuery.-->
+
+<body>
+    <div id="content">
+        <nav class="nav">
+            <div class="container">
+                <header>
+                    <img id="logo" src="images/mountainspokelogo-skinny1.png">
+                </header>
+                <button onclick="dropdown()" id="more-options">&#9776;</button>
+                <ul id="reg-nav" class="hide">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li class=""><a href="adventure-tours.html">Adventure Tours</a></li>
+                    <li class=""><a href="events.html">Event</a></li>
+                    <li class="active"><a href="sales.html">Sales</a></li>
+                    <li class=""><a href="service.html">Service</a></li>
+                    <li class=""><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="accordion">
+                <div>
+                    <h1><a href="">Bulls Bike</a></h1>
+                    <p>
+                        <img src="images/bike-one.jpeg" alt="Bulls Bike">
+                    </p>
+                </div>
+                <div>
+                    <h1><a href="">Fox Bike</a></h1>
+                    <p>
+                        <img src="images/bike-two.jpeg" alt="Fox Bike">
+                    </p>
+                </div>
+                <div>
+                    <h1><a href="">Basso Bike</a></h1>
+                    <p>
+                        <img src="images/lightweight-bike.jpeg" alt="Basso Bike">
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Copyright TheMountainSpoke 2018</p>
+            <p>3950 Valley Commons Drive Bozeman, MT</p>
+            <p>Email: themountainspoke@speaking.com</p>
+            <p>Phone Number: 209-456-8945</p>
+        </footer>
+    </div>
+    <!--  JQuery  -->
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>
